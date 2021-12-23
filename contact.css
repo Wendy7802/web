@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.social{
+    color:blue;
+    font-size: larger;
+    height: auto;
+    width: 20px;
+    display: inline;
+    transition: color o.2s;
+}
+.social :hover{
+  color: black;
+}
