@@ -2,9 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background:#097048 ;
 }
 body{
-    background:#ffffff;
+    background:#097048;
     margin: 0;
 }
 nav{
@@ -50,10 +51,21 @@ nav a:hover{
 .gallary img{
     width: 100%;
     margin: auto;
-    height: 50%;
+    height: 500px;
+}
+.image {
+    margin: 5px;
+    border: 1px solid #000;
+    width: 100%;
+    float: left;
+}
+.image img{
+    width: 100%;
+    margin: auto;
+    height: 1000px;
 }
 .desc{
-    background:#f2f2f2;
+    background:#097048;
     color: red;
     text-align: center;
     padding: 15px;
@@ -72,7 +84,7 @@ p{
     color: #000;
 }
 h2{
-    background: #f2f2f2;
+        background: #f2f2f2;
     text-transform: capitalize;
     font-size: 20px;
     text-align: center;
@@ -92,13 +104,55 @@ h2{
 .photo img{
     width: 350px;
     margin: auto;
-    height: 70%;
+    height: 30%;
 }
 .footer{
-    background-color: #ffffff;
+    background-color: #097048;
     color: #00008b;
     text-transform: uppercase;
     text-decoration: cyan;
     justify-content: center;
     text-align: center;
+}
+@media  (max-width:500px) {
+    h1{
+        color: blue;
+    }
+    h2{
+        color: red;
+    }
+    .desc{
+        color: gray;
+    }
+    .footer{
+        color: purple;
+    }
+}
+@media  (orientation:landscape) {
+    h1{
+        color:pink;
+    }
+    h2{
+        color:cyan;
+    }
+    .desc{
+        color:jungle greenyellow;
+    }
+    .footer{
+        color:gold;
+    }
+}
+@media  (orientation:portrait) {
+    h1{
+        color:palegreen;
+    }
+    h2{
+        color:green;
+    }
+    .desc{
+        color: palevioletred;
+    }
+    .footer{
+        color: rgb(221, 27, 221);
+    }
 }

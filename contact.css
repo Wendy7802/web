@@ -2,15 +2,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #097048;
 }
 .social{
     color:blue;
     font-size: larger;
     height: auto;
-    width: 20px;
+    width: 70px;
     display: inline;
     transition: color o.2s;
 }
 .social :hover{
-  color: black;
+  background: skyblue;
+    color: #000;
 }
+h1{
+  background: #f2f2f2;
+  text-transform: capitalize;
+  font-size: 20px;
+  text-align: center;
+}
+p{
+  text-align: left;
+  text-transform: capitalize;
+  color: #000;
+}
+@media  (max-width:500px) {
+  h1{
+      color: blue;
+  }
+  .footer{
+      color: purple;
+  }
+  @media  (orientation:landscape), (max-width:500px) {
+    h1{
+        color:hotpink;
+    }
+    .footer{
+        color:gold;
+    }
+}
+@media  (orientation:portrait), (max-width:500px) {
+    h1{
+        color:palegreen;
+    }
+    .footer{
+        color: rgb(221, 27, 221);
+    }
+  }
